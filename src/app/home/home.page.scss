@@ -1,0 +1,25 @@
+#container {
+  text-align: center;
+
+  left: 0;
+  right: 0;
+  top: 50%;
+
+  position: absolute;
+  transform: translateY(-50%);
+}
+#container .h1{
+  font-size: 200px;
+}
+ion-title{
+  text-align: center;
+}
+ion-input{ 
+  text-align: center;
+}
+.sorteando{
+  color: rgb(194, 26, 26);
+}
+h1.fim{
+  color: rgb(136, 201, 40)
+}

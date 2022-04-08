@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="heart-outline"></ion-icon>
+       MEDIDOR DE AMOR
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">MEDIDOR DE AMOR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-input type="text" required placeholder="Digite seu Nome" [(ngModel)]="nome1" id="inserir"></ion-input>
+    <br>
+    <ion-input type="text" required placeholder="Digite seu Crush" [(ngModel)]="nome2" id="inserir"></ion-input>
+    <ion-button color="danger" expand="full"  shape="round" (click)="rolar()">
+      Será que vai dar certo?
+    </ion-button>
+    <h1 name="resultado" [class.fim]="sorteado" [class.sorteando]="sorteando">{{ valor }}%</h1>
+    <h2>{{ msg }}</h2>
+  </div>
+
+</ion-content>
